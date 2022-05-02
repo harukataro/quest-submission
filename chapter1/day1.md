@@ -13,4 +13,4 @@ Smart contract is a sort of programable environment on chain. Smart contract aut
 
 ## Explain the difference between a script and a transaction.
 
-script is that program before deploying and such as Cadance on Flow, Solidity on Ethereum. Transaction is that execution of programs triggered by wallet account.
+script is that program before deploying and such as Cadence on Flow, Solidity on Ethereum. Transaction is that execution of programs triggered by wallet account.
