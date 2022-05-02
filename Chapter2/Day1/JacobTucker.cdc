@@ -1,8 +1,8 @@
 access(all) contract JacobTucker {
 
-  pub let is: String
+    pub let is: String
 
-  init() {
-      self.is = "the best"
-  }
+    init() {
+        self.is = "the best"
+    }
 }
