@@ -12,16 +12,18 @@ ref: [Day2](https://github.com/emerald-dao/beginner-cadence-course/tree/main/cha
 
 ## In your opinion, even without knowing anything about the Blockchain or coding, why could the 5 Pillars be useful (you don't have to answer this for #5)?
 
-- Safety and Security
- Smart contract execution environment is open to all people include bad guys. so smart contract environment need to design this special environment. to guide developer to make smart contract secure.
+### Safety and Security
 
-- Clarity
- in history of Solidity that is same with smart contract history. smart bad guys find the bug or weak point of smart contract and stolen tokens many time. so smart contract should be easy to check for find weakness.
+Smart contract execution environment is open to all people include bad guys. so smart contract environment need to design this special environment. to guide developer to make smart contract secure.
 
-- Approachability
+### Clarity
+
+In history of Solidity that is same with smart contract history. smart bad guys find the bug or weak point of smart contract and stolen tokens many time. so smart contract should be easy to check for find weakness.
+
+### Approachability
 
 Easy to learn is key to expand number of engineers. it is also point of cost of development.
 
-- Developer Experience
+### Developer Experience
 
 Easy debug is key to improve speed of development and maintainability. in addition, it is also contribute less bugs that is key of security.
