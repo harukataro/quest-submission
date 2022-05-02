@@ -1,15 +1,16 @@
+# Day1
 
-reference: [https://github.com/emerald-dao/beginner-cadence-course/tree/main/chapter1.0/day1](https://github.com/emerald-dao/beginner-cadence-course/tree/main/chapter1.0/day1)
+reference: [Day1](https://github.com/emerald-dao/beginner-cadence-course/tree/main/chapter1.0/day1)
 
-1. Explain what the Blockchain is in your own words. You can read this to help you, but you don't have to: https://www.investopedia.com/terms/b/blockchain.asp
+## Explain what the Blockchain is in your own words. You can read this to help you, but you don't have to: https://www.investopedia.com/terms/b/blockchain.asp
 
-Blockchain is a distributed database and it was stared with Bitcon protocol. multiple node store same state values. most popular usage is that to store each accout's token volume.
+Blockchain is a distributed database and it was stared with Bitcoin protocol. multiple node store same state values. most popular usage is that to store each account's token volume.
 
 
-2. Explain what a Smart Contract is. You can read this to help you, but you don't have to: https://www.ibm.com/topics/smart-contracts
+## Explain what a Smart Contract is. You can read this to help you, but you don't have to: https://www.ibm.com/topics/smart-contracts
 
-Smart contract is a sort of programable envirement on chain. Smart contract automatically update state along with program before deplying to chain.
+Smart contract is a sort of programable environment on chain. Smart contract automatically update state along with program before deploying to chain.
 
-3. Explain the difference between a script and a transaction.
+## Explain the difference between a script and a transaction.
 
-script is that program before deplying and such as Cadance on Flow, Solidity on Ethereum. Transaction is that execution of programs triggerd by wallet accout.
+script is that program before deploying and such as Cadance on Flow, Solidity on Ethereum. Transaction is that execution of programs triggered by wallet account.
