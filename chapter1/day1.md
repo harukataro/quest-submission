@@ -1,4 +1,4 @@
-# Day1
+# Day1 
 
 reference: [Day1](https://github.com/emerald-dao/beginner-cadence-course/tree/main/chapter1.0/day1)
 
