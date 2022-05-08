@@ -1,34 +1,38 @@
 # Day5
 
-a pub(set)
-1 read, write
-2
-3 read, write
-4 read, write
+## variable
 
-b pub = pub(access)
-1 read, write
-2 
-3 read
-4 read
+- a pub(set)
+1, read, write
+2,
+3, read, write
+4, read, write
 
-c access(contract)
-1 read, write
-2 
-3 read
-4 
+- b pub = pub(access)
+1, read, write
+2, 
+3, read
+4, read
 
-d access(self)
-1 read, write
-2
-3
-4
+- c access(contract)
+1, read, write
+2, 
+3, read
+4, 
 
-publicFunc
+- d access(self)
+1, read, write
+2,
+3,
+4,
+
+## function
+
+- publicFunc
 anywhere
 
-contractFunc
+- contractFunc
 from containing contract
 
- privateFun
+- privateFun
  Current & Inner
