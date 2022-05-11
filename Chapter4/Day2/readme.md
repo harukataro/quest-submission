@@ -80,7 +80,6 @@ pub fun main(address: Address): String {
 
 ```
 Type
-
 &Stuff.Cat{Stuff.ICat}
 member of restricted type is not accessible: weight
 mismatched types. expected `String`, got `Int`
