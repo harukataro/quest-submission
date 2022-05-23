@@ -3,15 +3,19 @@ import NonFungibleToken from 0x02
 
 transaction(recipient: Address, name: String, favouriteFood: String, luckyNumber: Int) {
 
-prepare(signer: AuthAccount) {
-    let minter = signer.borrow<&CryptoPoops.Minter>(from: /storage/Minter)
-      ?? panic("This signer is not the one who deployed the contract.")
+prepare(signer: AuthAccount) {  
+  let myResource <- CryptoPoops.createEmptyCollection()
+  signer.save(<- myResource, to: /storage/MyResource) 
+  signer.link<&CryptoPoops.Collection{CryptoPoops.CollectionPublic, NonFungibleToken.Provider, NonFungibleToken.Receiver, NonFungibleToken.CollectionPublic}>(/public/MyResource, target: /storage/MyResource)
 
-    let recipientsCollection = getAccount(recipient).getCapability(/public/MyCollection)
-    .borrow<&CryptoPoops.Collection>()
-    ?? panic("The recipient does not have a Collection.")
+  let minter = signer.borrow<&CryptoPoops.Minter>(from: /storage/Minter)
+    ?? panic("This signer is not the one who deployed the contract.")
 
-    let nft <- minter.createNFT(name: name, favouriteFood: favouriteFood, luckyNumber: luckyNumber)
-    recipientsCollection.deposit(token: <- nft)
+  let recipientsCollection = getAccount(recipient).getCapability(/public/MyResource)
+  .borrow<&CryptoPoops.Collection{CryptoPoops.CollectionPublic, NonFungibleToken.Provider, NonFungibleToken.Receiver, NonFungibleToken.CollectionPublic}>()
+  ?? panic("The recipient does not have a Collection.")
+
+  let nft <- minter.createNFT(name: name, favouriteFood: favouriteFood, luckyNumber: luckyNumber)
+  recipientsCollection.deposit(token: <- nft)
   }
 }
